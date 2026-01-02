@@ -4,8 +4,7 @@ import pickle
 import pandas as pd
 import requests
 import os
-from dotenv import load_dotenv
-load_dotenv()
+
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 if TMDB_API_KEY is None:
     st.error("TMDB API key missing. Check .env file")
